@@ -205,3 +205,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# certificates
+Module3_CreateAVoiceAssistant/chatapp-with-voice-and-openai-outline/certs
