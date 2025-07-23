@@ -68,9 +68,6 @@ Instructions for running the app will be provided as the project evolves.
 
 ## Application Modules
 
-TODO
-
----
 
 ### Module 2: Create Your Own CatGPT-Like Website
 
@@ -132,6 +129,43 @@ flask run
 * Ensure the Flask server is running before interacting with the chatbot UI.
 
 ---
+
+### 🧰 Module 4 – Additional Requirements
+
+This module relies on **OpenAI's Whisper model** for speech-to-text transcription, which requires the `ffmpeg` utility to decode audio files. Please follow the instructions below to install it:
+
+#### 1. Install FFmpeg (Required for audio decoding)
+
+##### 🔹 On Windows:
+
+* Download the FFmpeg release from the official site:
+  👉 [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html) → Click on **Windows** → Choose a prebuilt binary from [gyan.dev](https://www.gyan.dev/ffmpeg/builds/)
+* Extract the archive (e.g. to `C:\ffmpeg`)
+* Add `C:\ffmpeg\bin` to your system's **PATH** environment variable:
+
+  * Press `Win + R`, type `sysdm.cpl`, and hit Enter.
+  * Go to the **Advanced** tab → Environment Variables.
+  * Under "System variables", find the `Path` variable → Edit → Add a new entry: `C:\ffmpeg\bin`
+
+To verify:
+
+```bash
+ffmpeg -version
+```
+
+You should see version info printed in the terminal.
+
+##### 🔹 On macOS (with Homebrew):
+
+```bash
+brew install ffmpeg
+```
+
+##### 🔹 On Ubuntu/Debian:
+
+```bash
+sudo apt update && sudo apt install ffmpeg
+```
 
 
 ## Notes
