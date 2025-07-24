@@ -11,7 +11,7 @@ pydantic==2.10.1
 pandas==1.5
 atlassian-python-api==3.36.0
 huggingface-hub==0.16.4
-torch==2.0.1
+torch==2.3.0
 sentence-transformers==2.2.2
 InstructorEmbedding==1.0.0
 p4python==2023.1.2454917
